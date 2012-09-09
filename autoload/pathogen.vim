@@ -1,0 +1,1 @@
+/Users/rerganian/git/vim/vim-pathogen/autoload/pathogen.vim
