@@ -4,3 +4,6 @@
 [submodule "bundle/pychimp"]
 	path = bundle/pychimp
 	url = https://github.com/Pychimp/Pychimp-vim.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/mitechie/pyflakes-pathogen.git
