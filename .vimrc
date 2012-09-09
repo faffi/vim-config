@@ -1,12 +1,21 @@
+"Disabled Plugins
+let g:pathogen_disabled = []
+
+"Disable snipmate for now cause it's being lame with self tabbing
+call add(g:pathogen_disabled, 'snipmate')
+
+"Pathogen Stuff
 set nocompatible
 filetype off
 call pathogen#runtime_append_all_bundles()
 call pathogen#helptags()
 
+"Normal vim stuff
 syntax on
 filetype on
 filetype plugin indent on
 filetype plugin on
+"Omnicompletion config stuff
 set ofu=syntaxcomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 set background=dark
@@ -25,10 +34,17 @@ set incsearch
 set foldmethod=indent
 set foldlevel=99
 
-
+"nerdtree!
+autocmd vimenter * NERDTree
+"colorschemin
 colorscheme pychimp
 
 
 "Close the preview doc window when leaving insert mode
 autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 
+"Tab Mappings :D
+map  <C-l> :tabn<CR>
+map  <C-h> :tabp<CR>
+map  <C-n> :tabnew<CR>
