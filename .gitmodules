@@ -1,0 +1,6 @@
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule "bundle/pychimp"]
+	path = bundle/pychimp
+	url = https://github.com/Pychimp/Pychimp-vim.git
