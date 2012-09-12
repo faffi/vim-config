@@ -23,6 +23,9 @@ set hlsearch
 set ruler
 set number
 
+"pydoc 
+let g:pydoc_cmd = 'python -m pydoc' 
+
 set backspace=indent,eol,start
 set history=1000
 set undolevels=1000
@@ -36,6 +39,12 @@ set foldlevel=99
 
 "nerdtree!
 autocmd vimenter * NERDTree
+let g:nerdtree_tabs_open_on_console_startup=1
+let g:nerdtree_tabs_smart_startup_focus=1
+let g:nerdtree_tabs_synchronize_view=1
+
+
+
 "colorschemin
 colorscheme pychimp
 
