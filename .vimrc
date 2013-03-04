@@ -32,6 +32,7 @@ set undolevels=1000
 
 set title
 set showmatch
+set ignorecase
 set smartcase
 set incsearch
 set foldmethod=indent
@@ -58,3 +59,10 @@ autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 map  <C-l> :tabn<CR>
 map  <C-h> :tabp<CR>
 map  <C-n> :tabnew<CR>
+
+
+"omfg awesome
+nmap j gj
+nmap k gk
+"clear highlighted search
+nmap \q :nohlsearch<CR>
